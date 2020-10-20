@@ -13,3 +13,12 @@ In order to run the application, you will need to:
 7. Visit the application ( http://127.0.0.1:3000/meetings ) - you may need to adjust the port pending on how you serve the code
 8. Log in with username: `test@boardable.com` and password: `password`
 
+You can also setup the application environment via Docker from the following commands:
+
+1. `docker build -t public-meeting-page .`
+2. `docker run -p 3000:3000 -d public-meeting-page`
+3. Visit the application ( http://127.0.0.1:3000/meetings )
+4. Log in with username: `test@boardable.com` and password: `password` 
+
+To access the Docker container via shell:
+`docker exec -it <container id> /bin/bash`
